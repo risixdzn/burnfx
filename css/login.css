@@ -403,6 +403,9 @@ header.is-scrolling{
     max-width: 400px;
     position: absolute;
     padding: 50px ;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
     backdrop-filter: blur(5px);
     transform: translate(-50%, -50%);
@@ -419,10 +422,40 @@ header.is-scrolling{
     font-family: "Poppins", sans-serif;
   }
   
-  .title {
+  .inLoginForm .imgbox{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 25px;
+  }
+
+  .inLoginForm img{    
+    width: 30%;
+    transition: .2s;
+  }
+
+  .inLoginForm img:hover{
+    filter: drop-shadow(0 0 1em var(--primary)) ;
+  }
+     
+
+  .inLoginForm .title {
     font-size: 32px;
     font-weight: 500;    
     text-align: center;
+  }
+
+  .inLoginForm .subtitle{
+    text-align: center;
+  }
+
+  .inLoginForm h4{
+    font-family: "Poppins";
+    font-size: 15px;
+    font-weight: 500;  
   }
   
   .inputGroup label {

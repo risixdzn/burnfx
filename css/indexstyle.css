@@ -9,6 +9,7 @@
   --primary-dark: #962626;
   --primary-light: #db513965;
   --primary-bright: #f14747;
+  --primary-whiter: #ffcbcb;
   --light: #eeeeee;
   --dark: #070707;
   --dark2: #0c0c0c;
@@ -20,7 +21,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 
 html{
@@ -52,7 +53,7 @@ html{
 html body {
   max-width: 100%;
   overflow-x: hidden;
-  background-color: var(--dark);
+  background-color: var(--dark);  
 }
 
 
@@ -290,19 +291,50 @@ html body {
 
 .trabalhos-recentes {
   scroll-snap-align: start;
-  display: flex;
+  display: block;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 100px 0;
-  background-color: var(--light);
-  background-image: url(../Vids/BG-rloop-cpct.gif);
-  height: 100vh;
+  background-color: var(--dark);
+  background-image: url(../Imgs/login-bg-dark.png);
+  height: 95vh;
   color: #fff;
   z-index: 97;
+  gap: 50px;
+  text-align: center;
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
   box-shadow: 0 0 2em rgba(0, 0, 0, 0.575);
+}
+
+.trabalhos-recentes .titlesection{
+  font-family: "Akira Expanded", sans-serif;
+  font-size: 30px;
+  
+}
+
+.trabalhos-recentes .titlesection:after {
+  content : "";
+  position : absolute;
+  width : 20%;
+  height : 3px;
+  background-color: white;
+ margin-top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}   
+
+.swipeicon{
+  margin-top: px;
+  
+}
+
+.swipeicon .text{
+  font-family: "Poppins";
+  color: rgb(209, 209, 209);
+  font-size: 18px;
 }
 
 /*trabalho recentes end*/
@@ -310,6 +342,115 @@ html body {
 /*trabalhe conosco start*/
 
 .envieseusclips {
+  padding: 100px 0;  
+  background-image: url(Imgs/topo-bg.png);
+  height: 80vh;
+  color: #fff;
+  z-index: 97;
+  background-position: center;    
+  background-repeat: no-repeat;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.575);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cttbox{
+  margin: 25px;
+  width: auto;
+  height: auto;
+  padding: 75px;
+  background: rgba( 0, 0, 0, 0.6 );
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 20px;
+  border: 1px solid rgba( 255, 255, 255, 0.05 );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cttbox .title{   
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Akira Expanded", sans-serif;
+  font-style: normal;
+  line-height: 40px;
+  filter: drop-shadow(0px 5px 5px #0000003a);
+}
+  
+.cttbox .title:after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: var(--primary);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+  
+.cttbox .subtitle{
+  font-weight: 500;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cttbox .desc{
+  font-weight: 400;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cttbox .button{
+  color: #ffffff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  background-color: var(--primary);
+  width: 160px;
+  height: 50px;
+  border: none;
+  box-shadow: 0 0 0 var(--primary);
+  border-radius: 40px;
+  margin-top: 25px;
+  transition: 0.2s ease-in-out;
+  z-index: 950;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px 5px 5px #0000003a);
+  text-decoration: none;
+}
+
+.cttbox .button:hover {
+  box-shadow: 0 0 1.5em var(--primary);
+  cursor: pointer;
+}
+
+.cttbox .imgwrap{
+  width: 25vw;
+  height: 12.5vw;
+}
+
+.cttbox .imgwrap img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/*.envieseusclips {
   scroll-snap-align: start;
   display: flex;  
   height: 90vh;
@@ -358,9 +499,11 @@ html body {
 	font-weight: 400;  
 }
 
+
 .linhaseparar{
   height: 3.5px;
   background-color: #FFF;
+  position: absolute;
 }
 
 #contact h4 {
@@ -458,7 +601,7 @@ input[type=file]::file-selector-button{
 }
 :-ms-input-placeholder {
  color:#888;
-}
+}*/
 
 /*trabalhe conosco end*/
 
@@ -492,9 +635,7 @@ input[type=file]::file-selector-button{
 /*other responsive*/
 
 @media (max-width: 760px) {
-  ::-webkit-scrollbar{
-    display: none;
-  }
+ 
 
   .headerimg {
     display: none;
@@ -562,6 +703,14 @@ input[type=file]::file-selector-button{
     margin-top: 5rem;
   }
   .envieseusclips .box .column2 {
+    display: none;
+  }
+
+  .cttbox{
+    padding: 40px;
+  }
+
+  .imgwrap{
     display: none;
   }
 }

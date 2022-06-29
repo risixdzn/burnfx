@@ -46,7 +46,7 @@ $(document).ready(function () {
     .addTo(controller);
 
   var ourScene = new ScrollMagic.Scene({
-    triggerElement: "#trabalhos-recentes-maxwidth",
+    triggerElement: "#slide-content",
     duration: 700,
   })
     .setClassToggle("#nav03", "is-active")
@@ -59,5 +59,4 @@ $(document).ready(function () {
     .setClassToggle("#nav04", "is-active")
     .addTo(controller);
 });
-
 

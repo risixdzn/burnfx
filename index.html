@@ -7,7 +7,7 @@
     <title>Burn</title>
     <meta name="description" content="Always on fire.">
     <link rel="stylesheet" href="css/indexstyle.css" />    
-    <link rel="shortcut icon" type="image/png" href="Imgs/favicon.png">    
+    <link rel="shortcut icon" type="image/png" href="Imgs/minimal gradient.png">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <script src="https://kit.fontawesome.com/53a67ba7bc.js" crossorigin="anonymous"></script>    
     <script src="https://unpkg.com/scrollreveal"></script>   
@@ -16,6 +16,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
     <meta property='og:title' content='Burn - Always on Fire'/>
     <meta property='og:image' content='https://i.ibb.co/BLN41TH/ogimage.png'/>
@@ -34,13 +37,13 @@
   <a class="logo" href="/"><img src="Imgs/logo.svg" alt="logo"></a>
   <nav>
       <ul class="nav__links">
-          <li><a class="link" href="#" id="nav01">Home</a></li>
-          <li><a class="link" href="#" id="nav02">Quem&nbspsomos</a></li>
-          <li><a class="link" href="#" id="nav03">Trabalhos&nbspRecentes</a></li>
-          <li><a class="link" href="#" id="nav04">Envie&nbspseus&nbspclips</a></li>
+          <li><a class="link" href="#home" id="nav01">Home</a></li>
+          <li><a class="link" href="#quemsomos" id="nav02">Quem&nbspsomos</a></li>
+          <li><a class="link" href="#trabalhos-recentes" id="nav03">Trabalhos&nbspRecentes</a></li>
+          <li><a class="link" href="#envieseusclips" id="nav04">Envie&nbspseus&nbspclips</a></li>
       </ul>
   </nav>
-  <a class="login" href="login.html"><i class="fa-solid fa-user"></i>&nbspMinha&nbspconta</a>
+  <a class="login" href="https://risixdzn.github.io/burnfx/login.html"><i class="fa-solid fa-user"></i>&nbspMinha&nbspconta</a>
   <button class="hamburger">
       <span></span>
       <span></span>
@@ -52,7 +55,7 @@
   <a href="#quemsomos"><i class="fa-solid fa-user"></i> Quem&nbspsomos</a>
   <a href="#trabalhos-recentes"><i class="fa-solid fa-paintbrush"></i> Projetos&nbsprecentes</a>
   <a href="#envieseusclips"><i class="fa-solid fa-envelope"></i> Envie&nbspseus&nbspclips</a>  
-  <a href="html/login.html"><i class="fa-solid fa-user"></i> Minha conta</a>         
+  <a href="https://risixdzn.github.io/burnfx/login.html"><i class="fa-solid fa-user"></i> Minha conta</a>         
 </nav>   
 <script type="text/javascript" src="js/main.js"></script>
 
@@ -93,7 +96,7 @@
         <div class="quemsomos-conteudo">
 
           <div class="column1">
-            <div class="titlequemsomos">
+            <div class="titlequemsomos" id="">
               <h1 class="numbersection">01</h1>
               <hr class="lineacross"> 
               <h1 class="titlesection">Quem&nbspsomos</h1>
@@ -131,44 +134,209 @@
     <!--trabalhos recentes-->
 
     <section class="trabalhos-recentes" id="trabalhos-recentes">
+
+      <link rel="stylesheet" href="css/swiper.css" />
+
+      <h1 class="titlesection">Trabalhos Recentes</h1>      
       
-      <div id="trabalhos-recentes-maxwidth" class="trabalhos-recentes-maxwidth"></div> 
-      
-    </section>
+
+      <div class="slide-container swiper">
+        <div class="slide-content" id="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="Imgs/Profiles/hydro.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Hydrogen</h2>
+                        <p class="description">Streamer at @FacebookGaming <Br>Gangplank/Swain main. <Br> <a href="https://fb.gg/thehydrogen" target="_blank">fb.gg/thehydrogen</a></p>
+
+                        <button onclick="window.open('https://youtu.be/uA4ZzhvU9Nk', '_blank').focus();" class="button"  target="_blank">Assista</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="Imgs/Profiles/Klaus.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Klaus</h2>
+                        <p class="description">League of Legends esports player.<br>Previously bot laner for Vivo Keyd.<br><a href="https://twitch.tv/klauslol1" target="_blank">twitch.tv/klauslol1</a></p>
+
+                        <button onclick="window.open('https://www.tiktok.com/@klauslol1/video/7094374995694030086', '_blank').focus();" class="button">Assista</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="Imgs/Profiles/red.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Red Canids</h2>
+                        <p class="description">Time de E-Sports Brasileiro<br>Tricampeão do #CBLOL<br><a href="https://twitter.com/redcanids" target="_blank">twitter.com/redcanids</a></p>
+
+                        <button onclick="window.open('https://youtu.be/msVBtfyDFO0', '_blank').focus();" class="button">Assista</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="Imgs/Profiles/buero.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">"Buero"</h2>
+                        <p class="description">Brazilian ADC, the "Kiting monster".<br>Currently Free Agent.<br><a href="https://twitch.tv/buerinho" target="_blank">twitch.tv/buerinho</a></p>
+
+                        <button onclick="window.open('https://twitter.com/burnfxbr/status/1520137817451638785', '_blank').focus();" class="button">Assista</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="Imgs/Profiles/cuts.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Courtesy</h2>
+                        <p class="description">Work approved by Courtesy.<br>Top #1 Yasuo world.<br><a href="https://twitter.com/courtesyas" target="_blank">twitter.com/courtesyas</a></p>
+
+                        <button onclick="window.open('https://twitter.com/risixdzn/status/1495193015408898049', '_blank').focus();" class="button">Assista</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="Imgs/Profiles/titan.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Titan</h2>
+                        <p class="description">Work approved by Titan, a League of Legends esports player.<br>Red Canids ADC. <a href="https://twitter.com/titannlol1" target="_blank">twitter.com/titannlol1</a></p>
+
+                        <button onclick="window.open('https://youtu.be/msVBtfyDFO0', '_blank').focus();" class="button">Assista</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="Imgs/Profiles/aegis.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Aegis</h2>
+                        <p class="description">Work approved by Aegis, a League of Legends esports player.<br>Red Canids JG. <a href="https://twitter.com/aegislol1" target="_blank">twitter.com/aegislol1</a></p>
+
+                        <button onclick="window.open('https://youtu.be/msVBtfyDFO0', '_blank').focus();" class="button">Assista</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="Imgs/Profiles/quindinho.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Quindinho</h2>
+                        <p class="description">Work approved by Quindinho.<br>Top 1 Katarina BR.<br><a href="https://www.twitch.tv/quindinho" target="_blank">twitch.tv/quindinho</a></p>
+
+                        <button onclick="window.open('https://twitter.com/risixdzn/status/1433260172076634112', '_blank').focus();" class="button">Assista</button>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
+        
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class=swipeicon>
+      <div class="animation">
+        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+          <lord-icon
+            src="https://cdn.lordicon.com/sukojcry.json"
+            trigger="loop"
+            colors="primary:#dbdbdb"
+            style="width:75px;height:75px">
+          </lord-icon>
+      </div>
+      <h3 class="text">Deslize</h3>
     
+    </div>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/swiper.js"></script>
+
+
+  </section>
+
+    
+   
     <!--trabalhosrecentesend--> 
   
     <!--trabalheconosco-->
 
     <section class="envieseusclips" id="envieseusclips">
-      <div class="trabalheconosco-maxwidth">
-        <div class="box">
+      <div class="envieseusclips-maxwidth">
+        
+        <div class="cttbox">
+          <h1 class="title">Envie Seus Clips</h3>
+          <h2 class="subtitle">Vamos trabalhar juntos!</h2>
+          <h3 class="desc">Quer aparecer em nossas mídias sociais com sua jogada insana?<br>Envie seus clips por meio do <B>Discord.</B><Br><Br>Clique no botão abaixo para começar</h3>
+          <a class="button" href="login.html"><i class="fa-solid fa-user"></i>&nbspMinha Conta</a>
+          
+          <div class="imgwrap">
+            <img src="Imgs/waves.png" alt="waves">
+          </div>          
+        </div>
+       </div>
+        
+        
+        
+        
+        
+        
+        
+        <!--<div class="box">
           <div class="column1">
             <div class="containerform">  
               <form id="contact" class="contact" method="POST" action="javascript:sendEmail();thankMail()">
                 <h3>Envie Seus<br>Clips!</h3>
-                <hr class="linhaseparar">                        
-                <h4>Envie sua melhor jogada e apareça<br>em nossas mídias sociais!</h4>
-                
-                <fieldset>
-                  <input class="name" id="name" placeholder="Seu nome / nickname" type="text" name="name" tabindex="1" required autofocus>
-                </fieldset>
-                <fieldset>
-                  <input class="email" id="email" placeholder="Seu email" type="text" name="email" tabindex="2" required>
-                </fieldset>
-                <fieldset>
-                  <input class="twitterdisc" id="twitterdisc" placeholder="Twitter ou Discord" type="text" name="twitterdisc" tabindex="3" required>
-                </fieldset>    
-                <fieldset>              
-                  <input type="file" class="file" id="file" data-multiple-caption="{count} files selected" multiple style="color: #999; font-size: 13px;" />
-                <fieldset> 
-                               
-                <fieldset>
-                  <textarea class="message" id="message" placeholder="Descreva sua jogada em poucas palavras." type="text" name="message" tabindex="4" required></textarea>
-                </fieldset>                                     
-                <fieldset>
-                  <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar <i class="fa-solid fa-fire-flame-curved"></i></button>
-                </fieldset>                
+                            
+                <h4>Envie sua melhor jogada e apareça<br>em nossas mídias sociais!</h4>               
+                       
+                <h4>O envio de clips é feito por meio do discord. Crie sua conta no nosso website e você sera automaticamente redirecionado para o servidor.</h4>
               </form>               
             </div>            
           </div>
@@ -180,7 +348,7 @@
         </div>
          
         
-        <!--sendmail-->
+        sendmail
 
         <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.js"></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -225,7 +393,7 @@
           }
         </script>
 
-      </div>
+      </div>-->
     </section>    
 
     <!--trabalheconoscoend-->
@@ -253,7 +421,7 @@
       
             <ul class="nav__ul">
               <li>
-                <i class="fa fa-twitter"></i><a href="https://twitter.com/ignitelolbr" target="_blank">  Twitter</a>
+                <i class="fa fa-twitter"></i><a href="https://twitter.com/burnfxbr" target="_blank">  Twitter</a>
               </li>
       
               <li>
@@ -279,7 +447,7 @@
               </li>
               
               <li>
-                <i class="fa-solid fa-fire-flame-curved"></i></i><a href="https://twitter.com/ignitelolbr">  Ignite</a>
+                <i class="fa-solid fa-fire-flame-curved"></i></i><a href="https://twitter.com/ignitelolbr"> "risiX"</a>
               </li>
               
               <li>
@@ -287,12 +455,9 @@
               </li>
               
               <li>
-                <i class="fa-brands fa-bitcoin"></i><a href="#">  Prices</a>
-              </li>
+                <i class="fa-brands fa-bitcoin"></i><a href="https://risixdzn.github.io/burnfx/login.html">  Login</a>
+              </li>             
               
-              <li>
-                <i class="fa-solid fa-plus"></i><a href="#">  More</a>
-              </li>
             </ul>
           </li>
           
@@ -330,7 +495,13 @@
     <!--backtop-->
 
     <a href="#" class="to-top">
-      <i class="fas fa-chevron-up"></i>
+      <lord-icon
+          src="https://cdn.lordicon.com/eflfmgmj.json"
+          trigger="loop"
+          colors="primary:#ffffff"
+          state="hover-1"
+          style="width:32px;height:32px">
+      </lord-icon>
     </a>
 
     <!--backtopend-->
@@ -345,16 +516,16 @@
 	      delay: 400,
       });
       
-      ScrollReveal().reveal('.conteudo-home, .divisao', { delay: 0  }); 
+      ScrollReveal().reveal('.conteudo-home, .divisao, .titlesection, .', { delay: 0  }); 
       ScrollReveal().reveal('.titlequemsomos', { delay: 0, origin: 'top' });      
-      ScrollReveal().reveal('.btnreadmore', { delay: 699, origin: 'top' });  
-      ScrollReveal().reveal('.desc', { delay: 699, origin: 'top' });     
+      ScrollReveal().reveal('.btnreadmore, .slide-content, .swipeicon', { delay: 699, origin: 'top' });  
+      ScrollReveal().reveal('.desc, .', { delay: 699, origin: 'top' });     
       ScrollReveal().reveal('.arrowdown', { delay: 900, origin: 'top' }); 
       ScrollReveal().reveal('.waves, .imgside', { delay: 850 });     
       
     </script>
 
     <!--scrollreveal end-->
-      
+    
 </body>
 </html>
